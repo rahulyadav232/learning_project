@@ -1,0 +1,131 @@
+/* Header.module.css */
+header {
+    background-color: white;
+    color: #fff;
+    /* padding: 15px; */
+    height: 100%;
+
+}
+.menu-button{
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    height: 150px;
+    width: 170px;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding-top: 20px;
+   
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 30px;
+}
+
+.nav-links li:not(:last-child)::after {
+    content: " | ";
+    color: black;
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+.nav-links a:hover {
+    color: #0a0a0a; /* Change the color on hover */
+    text-decoration-line: underline;
+    
+}
+
+.side-button {
+    padding: 10px 15px;
+    background-color: #88abdf;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.side-button:hover {
+    background-color: #97add6;
+}
+
+.left-side-button {
+    padding: 10px 15px;
+    background-color: #2544ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.left-side-button:hover {
+    background-color: #5250cf;
+}
+
+
+/* ----------------media--------------- */
+
+
+
+/* Header.module.css */
+/* Your existing styles... */
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+   
+   .side-button{
+    display: none;
+   }
+   .left-side-button{
+    display: none;
+   }
+
+   .menu-button {
+    background-color: black;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    display: block; /* Show the menu button on smaller screens */
+   }
+   
+   .menu-button:hover + .nav-links {
+    display: flex; /* Show the links when hovering over the menu button */
+   }
+
+   .nav-links {
+    display: none; /* Hide the nav links by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    flex-direction: column; /* Stack the links vertically */
+    align-items: center; /* Center-align the links */
+    width: 100%; /* Cover the entire screen width */
+    height: 100%; /* Cover the entire screen height */
+    z-index: 1; /* Ensure it's above other content */
+   }
+
+
+  }
+  
+  

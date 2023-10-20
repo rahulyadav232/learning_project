@@ -1,0 +1,121 @@
+/* Category.css */
+
+.Category {
+ background-color: rgb(255, 255, 255);
+    width: 92vw;  
+  }
+  
+  .Category-button button {
+    margin-top: 110px;
+    margin-left: 90px;
+    padding: 10px 20px;
+    background-color: #98afc9; /* Example button color */
+    color: #1341a5; /* Example text color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 300px;
+  }
+  
+  .Category-heading {
+    margin-left: 90px;
+    font-size: 2.5em;
+    margin-top: 15px;
+    color: #333; /* Example heading color */
+  }
+
+   span{
+    color: #1341a5;
+    /* font-size: 2.5em;
+    font-weight: 2.5em; */
+   }
+
+   .main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 90px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content-section {
+    height: 150px;
+    width: 320px;
+    background-color: rgb(127, 206, 233);
+    text-align: center;
+    line-height: 150px;
+    margin: 1px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 94.5%;
+    background-color: rgb(21, 21, 237);
+    height: 65px;
+    line-height: 25px;
+}
+
+.main-footer-text {
+    color: white;
+    margin-left: 50px;
+    font-weight: 300;
+    font-size: large;
+    
+}
+
+.main-footer-button {
+    color: white;
+    background-color: rgb(14, 169, 220);
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/* ------------------Media-query---------------------- */
+
+/* Existing styles... */
+
+@media screen and (max-width: 768px) {
+  .Category {
+    width: 100%; /* Expand to full width on smaller screens */
+  }
+
+  .Category-button button {
+    margin-top: 50px; /* Adjust button margin on smaller screens */
+  }
+
+  .Category-heading {
+    margin-left: 30px; /* Adjust heading margin on smaller screens */
+    font-size: 1.8em; /* Reduce font size for the heading */
+  }
+
+  .main {
+    margin-left: 30px; /* Adjust margin for the main content */
+  }
+
+  .main-content-section {
+    height: 100px; /* Reduce height for content sections */
+    width: 90%; /* Adjust width for content sections */
+  }
+
+  .main-footer {
+    height: auto; /* Let the footer height adjust based on content */
+  }
+
+  .main-footer-text {
+    margin-left: 30px; /* Adjust margin for text within the footer */
+    font-size: medium; /* Adjust font size for text */
+  }
+
+  .main-footer-button {
+    height: 30px; /* Adjust button height */
+    width: 35%; /* Adjust button width */
+  }
+}

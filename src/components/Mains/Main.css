@@ -1,0 +1,133 @@
+
+.container {
+  height: 60vh;
+  margin-left: 45px;
+  width: 100%;
+  background: rgb(174, 219, 132);
+  background: linear-gradient(
+    69deg,
+    rgba(174, 219, 132, 1) 0%,
+    rgba(20, 183, 204, 0.9458377100840336) 75%
+  );
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.content {
+    height: 100%;
+    padding: 0rem 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    
+
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: .5rem;
+    width: max-content;
+    padding: 0.2rem 0.5rem;
+    font-weight: 500;
+}
+
+.content h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin: 1rem 0rem;
+    font-weight: 500;
+    
+}
+
+.content h2 span {
+    color: #1f74d2;
+}
+
+.content p {
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+    margin: 1rem 0rem;
+    font-weight: 400;
+}
+
+.content input {
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 4rem;
+    margin-top: 1rem;
+    padding: 0rem 1rem;
+  
+}
+
+.headerImage {
+    height: 100%;
+    
+}
+
+.partner {
+    height: 30%;
+    width: 80%;
+    position: absolute;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    bottom: -15%;
+}
+
+
+/* ---------------------media----------------- */
+/* Existing styles... */
+
+@media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: auto;
+      margin: 0;
+      padding: 2rem;
+    }
+  
+    .content {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .content h3 {
+      font-size: 1.2rem;
+    }
+  
+    .content h2 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin: 1rem 0rem;
+    }
+  
+    .content p {
+      font-size: 1.4rem;
+      line-height: 1.3rem;
+      margin: 1rem 0rem;
+    }
+  
+    .content input {
+      margin-top: 1rem;
+    }
+  
+    .headerImage {
+      height: auto;
+      max-width: 100%;
+    }
+  
+    .partner {
+      height: auto;
+      bottom: 0;
+    }
+  }
+  
+  /* Additional styles for larger screens (if needed) */
+  

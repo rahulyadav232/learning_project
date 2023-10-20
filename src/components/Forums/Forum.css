@@ -1,0 +1,103 @@
+
+
+.form{
+  margin-top: 50px;
+  width: 88%;
+}
+
+.Doubt-button{
+    margin-top: 20px;
+    margin-left: 90px;
+    padding: 10px 20px;
+    background-color: #98afc9; /* Example button color */
+    color: #1341a5; /* Example text color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-desceription{
+    margin-left: 90px;
+    font-size: 40px;
+    font-weight: 55px;
+}
+
+
+.form-details {
+    display: flex;
+    flex-direction: row;
+    
+    margin-left: 50px;
+    justify-content: space-around;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333; /* Example label text color */
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Example input border color */
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #2544ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    /* height: 50px;
+    width: 100px; */
+  }
+
+
+  /* ----------------Media--query----------- */
+
+  /* Your existing styles... */
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .form {
+    width: 100%; /* Expand the form to full width on smaller screens */
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  .Doubt-button {
+    margin-left: 30px; /* Adjust left margin for the button */
+  }
+
+  .form-description {
+    margin-left: 30px; /* Adjust left margin for the description */
+    font-size: 28px; /* Reduce font size for the description */
+  }
+
+  .form-details {
+    flex-direction: column; /* Stack form elements vertically */
+    margin-left: 30px; /* Adjust left margin for form details */
+  }
+
+  label {
+    font-size: 1.2em; /* Adjust font size for labels */
+  }
+
+  input,
+  select {
+    width: 100%; /* Expand input and select to full width */
+  }
+
+  button {
+    margin-left: 30px; /* Adjust left margin for the button */
+    width: 100%; /* Expand the button to full width */
+  }
+}
