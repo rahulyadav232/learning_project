@@ -1,0 +1,58 @@
+
+.Top_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+    background-color: rgb(226, 237, 249);
+  }
+  
+  .Top_left {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .Top_right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Contact_no {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust margin as needed */
+  }
+  
+  .Message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for SVG icons */
+  svg {
+    fill: #555; /* Color for the icons */
+    margin-right: 5px; /* Adjust margin between icon and text */
+    width: 24px; /* Adjust the size of the icons */
+    height: 24px;
+  }
+  
+  /* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .Top_content {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .Top_right {
+      margin-top: 15px; /* Adjust margin for spacing */
+    }
+  }

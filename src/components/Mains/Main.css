@@ -1,133 +1,123 @@
-
-.container {
-  height: 60vh;
-  margin-left: 45px;
+.home_container {
   width: 100%;
-  background: rgb(174, 219, 132);
-  background: linear-gradient(
-    69deg,
-    rgba(174, 219, 132, 1) 0%,
-    rgba(20, 183, 204, 0.9458377100840336) 75%
-  );
+  background-image: linear-gradient(135deg, #61ce7040 10%, #42afef40 55%);
+  height: 65vh;
   display: flex;
-  justify-content: space-around;
+  padding-inline: 200px;
   position: relative;
 }
 
-.content {
-    height: 100%;
-    padding: 0rem 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    
-
+.home_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.content h3 {
-    font-size: 1.5rem;
-    background-color: white;
-    border-radius: .5rem;
-    width: max-content;
-    padding: 0.2rem 0.5rem;
-    font-weight: 500;
+.home_right {
+  flex: 1;
+  display: flex;
 }
 
-.content h2 {
-    font-size: 3.5rem;
-    line-height: 4rem;
-    margin: 1rem 0rem;
-    font-weight: 500;
-    
+.home_img {
+  height: 25rem;
+  align-self: flex-end;
+
+  position: relative;
 }
 
-.content h2 span {
-    color: #1f74d2;
+.head_title {
+  background-color: white;
+  border-radius: 10px;
+  width: fit-content;
+  font-size: 17px;
+  padding: 0.2rem 0.5rem;
 }
 
-.content p {
-    font-size: 1.8rem;
-    line-height: 1.5rem;
-    margin: 1rem 0rem;
-    font-weight: 400;
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 60px;
 }
 
-.content input {
-    outline: none;
-    border: none;
-    border-radius: .5rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    height: 4rem;
-    margin-top: 1rem;
-    padding: 0rem 1rem;
+.heading span {
+  display: block;
+}
+
+.sub_title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.search_wrapper {
+  background: #f1f2f3;
+  min-height: 48px;
+  width: 360px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+}
+
+.search_wrapper div {
+  height: 100%;
+  width: 30px;
+}
+
+.search_wrapper input {
+  background: #f1f2f3;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.slider {
+  width: 85%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
+  bottom: -100px;
+}
+
+.box {
+  height: 120px;
+  min-width: 200px;
+  background-color: aquamarine;
+  margin: 0 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   
-}
-
-.headerImage {
-    height: 100%;
-    
-}
-
-.partner {
-    height: 30%;
-    width: 80%;
-    position: absolute;
-    background-color: white;
-    border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    bottom: -15%;
-}
-
-
-/* ---------------------media----------------- */
-/* Existing styles... */
-
 @media screen and (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      height: auto;
-      margin: 0;
-      padding: 2rem;
-    }
-  
-    .content {
-      width: 100%;
-      padding: 0;
-    }
-  
-    .content h3 {
-      font-size: 1.2rem;
-    }
-  
-    .content h2 {
-      font-size: 2.5rem;
-      line-height: 3rem;
-      margin: 1rem 0rem;
-    }
-  
-    .content p {
-      font-size: 1.4rem;
-      line-height: 1.3rem;
-      margin: 1rem 0rem;
-    }
-  
-    .content input {
-      margin-top: 1rem;
-    }
-  
-    .headerImage {
-      height: auto;
-      max-width: 100%;
-    }
-  
-    .partner {
-      height: auto;
-      bottom: 0;
-    }
+  .home_container {
+    height: auto; /* Adjust height for responsiveness */
+    padding-inline: 20px; /* Adjust padding for smaller screens */
+    display: flex;
+    flex-direction: column; /* Change to column layout on smaller screens */
   }
-  
-  /* Additional styles for larger screens (if needed) */
-  
+
+  .home_left,
+  .home_right {
+    flex: auto; /* Allow items to take full width in column layout */
+  }
+
+  .home_img {
+    height: auto; /* Adjust image height for responsiveness */
+    width: 100%; /* Set image width to fill the container */
+  }
+
+  /* Adjust other styles for responsiveness as needed */
+  /* You can modify styles for headings, search wrappers, sliders, etc. */
+}
